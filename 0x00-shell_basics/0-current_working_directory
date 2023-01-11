@@ -1,0 +1,4 @@
+#!/bin/bash
+# Prints path name of current working directory.
+echo "pwd"
+
