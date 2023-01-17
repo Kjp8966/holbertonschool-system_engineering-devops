@@ -1,2 +1,2 @@
 #!/bin/bash
-if [[ $uid -le 100 ]]; then echo $user $home; fi; done < /etc/passwd
+awk -F: ' $3 <= 100 {print $1, $6}' /etc/passwd
