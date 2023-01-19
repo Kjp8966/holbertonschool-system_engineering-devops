@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+#Lucky/unlucky numbers
+x=1
+while [ $x -le 20 ]
+do
+if [ $x -eq 4 ]
+then
+echo -e "bad luck China"
+elif [ $x -eq 9 ]
+then
+echo -e "bad luck Japan"
+elif [ $x -eq 17 ]
+then
+echo -e "bad luck Italy"
+else
+    echo "Best School"
+fi
+x=$(( x + 1 ))
+done
