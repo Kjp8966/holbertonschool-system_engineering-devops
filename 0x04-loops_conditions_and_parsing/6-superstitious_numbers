@@ -4,16 +4,16 @@ x=1
 while [ $x -le 20 ]
 do
     case "$x" in
-	4) echo -e "bad luck China"
+	4) echo -e $x"\nbad luck China"
     x=$(( x + 1 ))
         ;;
-	9) echo -e "bad luck Japan"
+	9) echo -e $x"\nbad luck Japan"
     x=$(( x + 1 ))
         ;;
-	17) echo -e "bad luck Italy"
+	17) echo -e $x"\nbad luck Italy"
     x=$(( x + 1 ))
         ;;  
 esac	
-    echo "Best School"
+    echo $x
 x=$(( x + 1 ))
 done
