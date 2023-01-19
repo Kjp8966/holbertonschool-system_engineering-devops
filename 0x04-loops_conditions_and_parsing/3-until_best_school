@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#Until loop to 10
+x=1
+until [ ! $x -le 10 ]
+do
+echo "Best School"
+x = $(( x + 1 ))
+done
