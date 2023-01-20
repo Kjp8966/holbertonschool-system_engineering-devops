@@ -1,3 +1,2 @@
 #!/usr/bin/env bash
-#display myself pid
-echo $$
+#display pid
