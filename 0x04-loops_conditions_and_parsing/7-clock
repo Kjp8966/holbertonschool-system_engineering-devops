@@ -1,19 +1,15 @@
 #!/usr/bin/env bash
 #Display hours and minutes
-hour=0
-while [ $hour -le 12 ]
+i=0
+j=1
+while [ $i -le 13 ]
 do
-    echo Hour: $hour
-    hour=$(( h + 1 ))
-    minute=0
-    while [ $minute -le 59 ]
+    echo "Hour: $i"
+    i=$(( i + 1 ))
+    while [ $j -le 60 ]
     do
-	echo $minute
-	minute=$(( m + 1 ))
-	if [ $minute -eq 59 ]
-	then
-	    hour=$(( n + 1 ))
-	    fi
-	break
+	echo $j
+	j=$(( j + 1 ))
     done
-    
+    j=1
+done
