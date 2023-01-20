@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #Display hours and minutes
-hour=-1
+hour=0
 while [ $hour -le 12 ]
 do
     echo Hour: $hour
@@ -12,7 +12,7 @@ do
 	minute=$(( m + 1 ))
 	if [ $minute -eq 59 ]
 	then
-	    $hour=$(( n + 1 ))
+	    hour=$(( n + 1 ))
 	    fi
 	break
     done
