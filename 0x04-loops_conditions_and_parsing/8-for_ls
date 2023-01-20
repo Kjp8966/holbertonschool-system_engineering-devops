@@ -1,2 +1,7 @@
 #!/usr/bin/env bash
 #bash script to display content
+DIR=$(ls)
+for file in $DIR
+do
+    echo "$file" | cut -d "-" -f2
+done
